@@ -1,0 +1,20 @@
+, ((upper body)), in the mountain, looking at viewer
+, full shot, hands in pockets, looking at viewer
+, ((upper body)), smiling, looking at viewer, in the office, wearing suit
+, ((upper body)), looking away, in the street, wearing dress
+, ((upper body)), in the class, sitting on the chair, looking at viewer
+, ((upper body)), in library, wearing hoodie
+, ((upper body)), in bakery, scary face, looking at viewer
+, ((upper body)), looking back, in market
+, ((upper body)), looking at hand, in cafe, wearing school uniform
+, ((upper body)), in lake, looking to the side, smiling
+, ((upper body)), in nightclub, eating, looking at viewer
+, ((upper body)), in geyser, looking to the side
+, ((upper body)), in airfield, looking at another, wearing pazamas
+, ((upper body)), in nightclub, drinking
+, ((upper body)), in building, watching computer
+, ((upper body)), in courtroom, speaking
+, ((upper body)), in field, straw hat
+, ((upper body)), in church, wearing glasses
+, ((upper body)), in castle, smiling
+,

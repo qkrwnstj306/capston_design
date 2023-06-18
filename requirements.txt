@@ -1,0 +1,63 @@
+#positive propmt는 77token, negative는 수량 상관없음
+#Ngrok server 배포 방법
+cd ngrok_dic_path
+./ngrok http {port_number}
+
+#yolo
+!git clone https://github.com/ultralytics/yolov5  # clone
+%cd yolov5
+!pip install -r requirements.txt  # install
+torch.cuda.is_available()
+
+
+#inpainting extension
+!mkdir -p ~/.huggingface
+HUGGINGFACE_TOKEN = "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" 
+!echo -n "{HUGGINGFACE_TOKEN}" > ~/.huggingface/token
+%pip install -qq git+https://github.com/ShivamShrirao/diffusers
+%pip install -q -U --pre triton
+%pip install -q accelerate transformers ftfy bitsandbytes==0.35.0 natsort safetensors xformers
+
+#for dreambooth
+!wget -q https://github.com/ShivamShrirao/diffusers/raw/main/examples/dreambooth/train_dreambooth.py
+!wget -q https://github.com/ShivamShrirao/diffusers/raw/main/scripts/convert_diffusers_to_original_stable_diffusion.py
+
+#torch version CUDA 11.3
+conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch
+
+
+#convert .ckpt to diffusers format
+https://github.com/ShivamShrirao/diffusers/tree/main/scripts/convert_original_stable_diffusion_to_diffusers.py 
+#에서 코드 복사
+
+#config file은
+#https://github.com/CompVis/stable-diffusion/tree/main/configs/stable-diffusion
+#에서 설치한다.. error가 안남.
+python convert_original_stable_diffusion_to_diffusers.py --dump_path ./civit_model_diffusers/revAnimate/ 
+--checkpoint_path ./civit_model_weight/revAnimate/revAnimated_v11.ckpt --original_config_file v1-inference.yaml
+
+#install config yaml file
+wget https://raw.githubusercontent.com/CompVis/stable-diffusion/main/configs/stable-diffusion/v1-inference.yaml
+
+#ex 
+python convert_original_stable_diffusion_to_diffusers.py 
+--dump_path ./civit_model_diffusers/pastelboys 
+--checkpoint_path ./civit_model_weight/pastelboys/pastelboys2D_v20.safetensors 
+--from_safetensors  --original_config_file v1-inference.yaml
+
+python convert_original_stable_diffusion_to_diffusers.py 
+--dump_path ./civit_model_diffusers/revAnimate
+--checkpoint_path ./civit_model_weight/revAnimate/revAnimated_v11.ckpt 
+--original_config_file v1-inference.yaml
+
+
+# vae .pt or ckpt convert to diffusers
+!wget -q https://github.com/ShivamShrirao/diffusers/raw/main/scripts/convert_vae_pt_to_diffusers.py
+!pip install omegaconf
+!pip install pytorch_lightning
+!python convert_vae_pt_to_diffusers.py --vae_pt_path "./anime_vae/kl-f8-anime2.ckpt" --dump_path "./anime_vae/vae"
+
+
+#install xformers -> memory efficient
+conda install xformers -c xformers
+pip install -U xformers==0.0.18

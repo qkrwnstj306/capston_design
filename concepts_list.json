@@ -1,0 +1,8 @@
+[
+    {
+        "instance_prompt": "rwc person",
+        "class_prompt": "person",
+        "instance_data_dir": "./dreambooth_model_weight/instance image/writer",
+        "class_data_dir": "./dreambooth_model_weight/class image"
+    }
+]
