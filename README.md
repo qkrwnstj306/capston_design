@@ -1,7 +1,7 @@
 # capston_design
 for illustration in web novel
 
-: smile   
+:smile:   
 - [ ] add report 
 - [ ] add model description   
 ## code description
