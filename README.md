@@ -1,9 +1,9 @@
 # capston_design
 for illustration in web novel
 
-smile
+: smile   
 - [ ] add report 
-add model description
+- [ ] add model description   
 ## code description
 
 **flask_web.py**
