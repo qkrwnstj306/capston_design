@@ -33,25 +33,25 @@ for illustration in web novel
       - 4개의 ai model을 불러와서 각각 한 장씩 이미지를 생성한다.   
       - 총 4장의 이미지를 생성한 뒤, JSON format으로 response한다.    
     - /copy_image   
-    작가가 원하는 등장인물을 학습하는 기능.   
-    작가가 선택한 등장인물 사진 한 장으로는 학습을 진행하기에는 어려움이 존재하기에, 먼저 다양한 배경, 표정, 각도에 대해서 이미지를 20장 생성해준다.   
-    20장의 이미지로 늘릴 때, 사용되는 prompt는 copy_prompt.txt에 존재. (동일한 model, seed, prompt를 활용한다)     
-    20장의 이미지를 만들었으면, dreambooth를 이용하여 학습을 진행한다. (학습 시간이 대략 30분 정도이니, multi thread를 활용하여 학습을 진행한다는 response를 보냄)   
-    학습을 완료했으면, 완료 flag를 web platform에 response해준다.   
+      - 작가가 원하는 등장인물을 학습하는 기능.   
+      - 작가가 선택한 등장인물 사진 한 장으로는 학습을 진행하기에는 어려움이 존재하기에, 먼저 다양한 배경, 표정, 각도에 대해서 이미지를 20장 생성해준다.   
+      - 20장의 이미지로 늘릴 때, 사용되는 prompt는 copy_prompt.txt에 존재. (동일한 model, seed, prompt를 활용한다)     
+      - 20장의 이미지를 만들었으면, dreambooth를 이용하여 학습을 진행한다. (학습 시간이 대략 30분 정도이니, multi thread를 활용하여 학습을 진행한다는 response를 보냄)   
+      - 학습을 완료했으면, 완료 flag를 web platform에 response해준다.   
     
     - /inference
-    작가가 등장인물 삽화를 생성할 때 사용하는 기능.   
-    학습이 완료된 ai model에게 instance prompt & Tag 를 전달하여 4장의 이미지를 생성. JSON format으로 response.    
+      - 작가가 등장인물 삽화를 생성할 때 사용하는 기능.   
+      - 학습이 완료된 ai model에게 instance prompt & Tag 를 전달하여 4장의 이미지를 생성. JSON format으로 response.    
     - /img2img
-    image to image 기능.   
+      - image to image 기능.   
     
   - using invoke AI generation toolkit (application)
     - /16_9   
-    이미지의 종횡비를 16:9로 생성.   
+      - 이미지의 종횡비를 16:9로 생성.   
     - /up   
-    이미지를 받으면 X2로 scaling.   
+      - 이미지를 받으면 X2로 scaling.   
     - /user   
-    invoke ai로 image를 생성.   
+      - invoke ai로 image를 생성.   
   
 
 
