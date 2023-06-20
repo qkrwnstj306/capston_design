@@ -29,9 +29,9 @@ for illustration in web novel
 3. 경로에 따른 기능 제공     
   - using diffusers   
     - /txt2img   
-    등장인물 sample 생성.   
-    4개의 ai model을 불러와서 각각 한 장씩 이미지를 생성한다.   
-    총 4장의 이미지를 생성한 뒤, JSON format으로 response한다.    
+      - 등장인물 sample 생성.   
+      - 4개의 ai model을 불러와서 각각 한 장씩 이미지를 생성한다.   
+      - 총 4장의 이미지를 생성한 뒤, JSON format으로 response한다.    
     - /copy_image   
     작가가 원하는 등장인물을 학습하는 기능.   
     작가가 선택한 등장인물 사진 한 장으로는 학습을 진행하기에는 어려움이 존재하기에, 먼저 다양한 배경, 표정, 각도에 대해서 이미지를 20장 생성해준다.   
