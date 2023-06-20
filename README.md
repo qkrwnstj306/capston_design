@@ -2,8 +2,8 @@
 for illustration in web novel
 
 :smile:   
-- [ ] add report 
-- [ ] add model description   
+- [X] add report 
+- [X] add model description   
 
 ## Goal
 본 프로젝트를 통해, 작가가 삽화가에게 삽화 외주를 맡기는 과정에서 발생하는 문제를 해결하고자 한다.      
