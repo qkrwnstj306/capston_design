@@ -74,9 +74,17 @@ anime : *Pastelboys*, *Counterfiet*
 ## result   
 
 <img src = './image for readme/0.png' width = '1024' height = '512' />   
-<img src = './image for readme/1.png' width = '512' height = '512' />   
-<img src = './image for readme/2.png' width = '512' height = '512' />   
-<img src = './image for readme/3.png' width = '512' height = '512' />   
-<img src = './image for readme/4.png' width = '512' height = '512' />   
+
+---
+<img src = './image for readme/1.png' width = '1024' height = '512' />   
+
+---
+<img src = './image for readme/2.png' width = '1024' height = '512' />   
+
+---
+<img src = './image for readme/3.png' width = '1024' height = '512' />   
+
+---
+<img src = './image for readme/4.png' width = '1024' height = '512' />   
 
 
