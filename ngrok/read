@@ -1,0 +1,1 @@
+flask로는 local -> global이 안돼서 서버 배포를 위해 ngrok을 이용
