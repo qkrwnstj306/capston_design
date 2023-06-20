@@ -68,4 +68,10 @@ anime : *Pastelboys*, *Counterfiet*
 - auto-inpainting
   - 해당 기능은 object의 얼굴, 손 등의 뭉개짐 현상을 완화시키기 위해서 제공을 했지만, 얼굴이 일부 바뀌는 문제가 존재.   
   등장인물의 일관성이 중요한 웹 소설에선 사용이 불가능하다고 판단하여 제거.   
-> model의 경우 .ckpt file -> diffusers format으로 바꿔줘야 diffusers library로 불러올 수 있다. 관련 내용은 requirements.txt에도 들어가있음
+> model의 경우 .ckpt file -> diffusers format으로 바꿔줘야 diffusers library로 불러올 수 있다. 관련 내용은 requirements.txt에도 들어가있음   
+
+---
+## result   
+
+![0][./image for readme/0.png]   
+
