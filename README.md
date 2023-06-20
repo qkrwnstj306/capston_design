@@ -73,5 +73,5 @@ anime : *Pastelboys*, *Counterfiet*
 ---
 ## result   
 
-![0][./image for readme/0.png]   
+![0](./image for readme/0.png)      
 
