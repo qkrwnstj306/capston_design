@@ -87,4 +87,6 @@ anime : *Pastelboys*, *Counterfiet*
 ---
 <img src = './image for readme/4.png' width = '1024' height = '512' />   
 
+---
+<img src = './demo_image.JPG' width = '1024' height = '512' />
 
